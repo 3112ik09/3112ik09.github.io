@@ -1,261 +1,392 @@
 <!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Ishant Kukreti — Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
 
--->
-<html>
-	<head>
-		<title>Portfolio Ishant Kukreti</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Ishant Kukreti</a>
+      <nav class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://drive.google.com/file/d/1BA9uwlRAfXdbJEwp5guVPoxgfFNhsTGr/view" class="btn btn-primary" target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+    </div>
+  </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- About / Hero -->
+  <section id="about">
+    <div class="container">
+      <span class="hero-eyebrow">ML Engineer · Computer Vision</span>
+      <h1 class="hero-name">Vision, AI &amp;<br>Building Stuff</h1>
+      <p class="hero-bio">I like to work with new tech and AI projects, and build stuff.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">LLMs</span>
+        <span class="skill-tag">AI Art</span>
+        <span class="skill-tag">GenAI</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+      <div class="social-bar">
+        <a href="https://www.linkedin.com/in/ishant-kukreti-8296aa1b1/" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/3112ik09" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>My Portfolio</h1>
-						<p>A show case of my projects</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">Work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">14 projects spanning AI, ML, computer vision, and mobile apps</p>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
-					</header>
+      <div class="projects-grid">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Portfolio</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ishant-kukreti-8296aa1b1/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/3112ik09" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        <!-- IPL Stats Dashboard -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/ipl_dashboard.png" alt="IPL Stats Dashboard" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">2026</p>
+            <h3 class="card-title">IPL Stats Dashboard</h3>
+            <p class="card-desc">AI-powered cricket analytics platform for IPL 2026. Ask questions about player and team stats conversationally, compare head-to-head matchups, and get pre-match score predictions.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Claude AI</span>
+                <span class="tech">LangGraph</span>
+                <span class="tech">Streamlit</span>
+                <span class="tech">Plotly</span>
+              </div>
+              <a href="https://github.com/3112ik09/ipl_stats_dashboard" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
+        <!-- Soul-Ai -->
+        <div class="card">
+          <div class="card-media">
+            <div class="card-banner b-indigo">🎙️</div>
+          </div>
+          <div class="card-body">
+            <p class="card-date">2024</p>
+            <h3 class="card-title">Soul-Ai</h3>
+            <p class="card-desc">Fully local macOS voice assistant for Apple Silicon — no cloud required. Wake-word detection, speech-to-text, LLM reasoning, and TTS output on a Live2D dashboard.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">MLX-LM</span>
+                <span class="tech">Whisper</span>
+                <span class="tech">Mistral-7B</span>
+                <span class="tech">Live2D</span>
+              </div>
+              <a href="https://github.com/3112ik09/Soul-Ai" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Ishant Kukreti</h2>
-									<p>
-										&#x25CF; Computer Science Gragaute with specilization in Machine Learing and AI<br>
-										&#x25CF; Intereseted to work new technology <br>
-										&#x25CF; Other Hobby AI art , Crypto , video editing  
-									</p>
-								</header>
-								
-								<ul class="actions special">
-									<li><a href="https://drive.google.com/file/d/1BA9uwlRAfXdbJEwp5guVPoxgfFNhsTGr/view" class="button large">Resume</a></li>
-								</ul>
-							</article>
-							
-						<!-- Posts -->
-							<section class="posts">
+        <!-- CloneVoice -->
+        <div class="card">
+          <div class="card-media">
+            <div class="card-banner b-orange">🔊</div>
+          </div>
+          <div class="card-body">
+            <p class="card-date">2023</p>
+            <h3 class="card-title">CloneVoice</h3>
+            <p class="card-desc">Cross-language voice cloning — converts speech to a target language while preserving the original speaker's voice. Uses Bark AI for synthesis and RVC for voice cloning.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Bark AI</span>
+                <span class="tech">Coqui TTS</span>
+                <span class="tech">RVC</span>
+                <span class="tech">Whisper</span>
+              </div>
+              <a href="https://github.com/3112ik09/CloneVoice" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
+        <!-- ImageInHand -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/segA.jpeg" alt="ImageInHand" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Sep 2023</p>
+            <h3 class="card-title">ImageInHand</h3>
+            <p class="card-desc">Select an image, segment it, and place the segmented object into a real-time overlay of your hand's position using computer vision.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">OpenCV</span>
+                <span class="tech">Segmentation</span>
+              </div>
+              <a href="https://youtu.be/I63XcEc699k?si=KGqyw8-RrIf3OoHp" class="btn btn-outline" target="_blank" rel="noopener">Video ↗</a>
+            </div>
+          </div>
+        </div>
 
-								<article>
-									<header>
-										<span class="date">Sep, 2023</span>
-										<h2><a href="#">ImageInHand</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/segA.jpeg" alt="" style="max-height: 600px; max-width: 500px;" /></a>
-									<p>An application that allows users to choose an image, segment it, and then place the segmented image into a real-time simulation of their hand's location</p>
-									<ul class="actions special">
-										<li><a href="https://youtu.be/I63XcEc699k?si=KGqyw8-RrIf3OoHp" class="button">Video Link</a></li>
-									</ul>
-								</article>
+        <!-- Summarizer -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/sum.png" alt="Summarizer" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Sep 2023</p>
+            <h3 class="card-title">Summarizer</h3>
+            <p class="card-desc">Get key points from a PDF or YouTube video translated into your native language, powered by GPT-3.5.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">GPT-3.5</span>
+                <span class="tech">Python</span>
+                <span class="tech">NLP</span>
+              </div>
+              <a href="https://github.com/3112ik09/Summarizer" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-								<article>
-									<header>
-										<span class="date">Sep, 2023</span>
-										<h2><a href="#">Summarizer</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/sum.png" alt="" style="max-height: 300px; max-width: 400px;" /></a>
-									<p>Summarizer is a easy way to get key points of a PDF or a YouTube video into your native language, using GPT-3.5 LLM</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/Summarizer" class="button">Link</a></li>
-									</ul>
-								</article>
+        <!-- LipSync -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/wav2lip.jpg" alt="LipSync" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Sep 2023</p>
+            <h3 class="card-title">LipSync</h3>
+            <p class="card-desc">Synchronize lip movements with any audio track using Wav2Lip, with GAN-based post-processing to improve video quality.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Wav2Lip</span>
+                <span class="tech">GAN</span>
+                <span class="tech">Python</span>
+              </div>
+              <a href="https://github.com/3112ik09/MakeSync" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-								<article>
-									<header>
-										<span class="date">Sep, 2023</span>
-										<h2><a href="#">LipSync</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/wav2lip.jpg" alt="" /></a>
-									<p>Utilize Wav2Lip to synchronize lip movements with audio. Used GAN to improve video quality.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/MakeSync" class="button">Link</a></li>
-									</ul>
-								</article>
+        <!-- WebPagesAnalyzer -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/output.png" alt="WebPagesAnalyzer" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Feb 2023</p>
+            <h3 class="card-title">WebPagesAnalyzer</h3>
+            <p class="card-desc">Web scraping tool that extracts data from websites and runs NLP analysis using NLTK and Python.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">NLTK</span>
+                <span class="tech">Web Scraping</span>
+              </div>
+              <a href="https://github.com/3112ik09/WebScrap" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle Speed Detection -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/runF.gif" alt="Vehicle Speed Detection" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Nov 2022</p>
+            <h3 class="card-title">Vehicle Speed Detection</h3>
+            <p class="card-desc">Estimates vehicle speed from video and stores number plate and vehicle metadata from the footage.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">OpenCV</span>
+                <span class="tech">YOLO</span>
+              </div>
+              <a href="https://github.com/3112ik09/SpeedApp" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-								<article>
-									<header>
-										<span class="date">Feb, 2023</span>
-										<h2><a href="#">WebPagesAnalyzer</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/output.png" alt="" /></a>
-									<p>Perform web scraping to extract data from websites and subsequently analyze the scraped data using NLTK and Python operations</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/WebScrap" class="button">Link</a></li>
-									</ul>
-								</article>
-								
-								<article>
-									<header>
-										<span class="date">Nov, 2022</span>
-										<h2><a href="#">Vehicle Speed Detection</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/runF.gif" alt="" /></a>
-									<p>Developed an app that can estimate vehicle speed store the nuberplate and vehicle's information .</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/SpeedApp" class="button">Link</a></li>
-									</ul>
-								</article>
+        <!-- Disease Prediction App -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/docF.gif" alt="Disease Prediction App" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Jan 2022</p>
+            <h3 class="card-title">Disease Prediction App</h3>
+            <p class="card-desc">Recommends medical tests for 42 diseases based on symptoms selected by the user, using a trained classification model.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">ML</span>
+                <span class="tech">Healthcare</span>
+              </div>
+              <a href="https://github.com/3112ik09/MyDocApp" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-								<article>
-									<header>
-										<span class="date">Jan, 2022</span>
-										<h2><a href="#">Disease Prediction App</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/docF.gif" alt="" /></a>
-									<p>Developed an app that recommends the medical test for diseases(42) symptoms selected by the user.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/MyDocApp" class="button">Link</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Sep, 2021</span>
-										<h2><a href="#">InstaZon</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/izcc.gif" alt="" /></a>
-									<p>Developed an app for all the influence where infuence could show case new tends and can link their recomended products.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/Instazon" class="button">Link</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">June, 2021</span>
-										<h2><a href="#">Video-Surveillance App</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/knf.png" alt="" /></a>
-									<p>Developed a surveillance app that helps monitor and analyze live or stored video to detect suspicious activity.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/video_surveillance" class="button">Link</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Jan, 2021</span>
-										<h2><a href="#">Covid19-Live</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Capp.png" alt="" style="max-height: 600px; max-width: 500px;" /></a>
-									<p>Build a Web Scraping Mobile App using Flutter that displays Covid-related data (cases, deaths, etc)</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/covid_app" class="button">Link</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Dec, 2020</span>
-										<h2><a href="#">Auto Sub</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/ikt1.gif" alt="" /></a>
-									<p>A clone of the Google Translate with speach to text avilable in some languages .</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/AutoSub" class="button">Link</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Oct, 2020</span>
-										<h2><a href="#">Emotion Bot</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/testbot.png" alt="" style="max-height: 600px; max-width: 500px;" /></a>
-									<p>Build an Emotion detection bot that runs on telegram and detects 4 different facial emotions from images.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/3112ik09/Emotion_detector_bot" class="button">Link</a></li>
-									</ul>
-								</article>
-								
-							</section>
+        <!-- InstaZon -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/izcc.gif" alt="InstaZon" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Sep 2021</p>
+            <h3 class="card-title">InstaZon</h3>
+            <p class="card-desc">Platform for influencers to showcase new trends and link their recommended products to followers.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">Web App</span>
+              </div>
+              <a href="https://github.com/3112ik09/Instazon" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-							
-							
-						</section>
+        <!-- Video-Surveillance -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/knf.png" alt="Video-Surveillance App" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Jun 2021</p>
+            <h3 class="card-title">Video-Surveillance App</h3>
+            <p class="card-desc">Monitors live or stored video to detect suspicious activity using computer vision techniques.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">OpenCV</span>
+                <span class="tech">CV</span>
+              </div>
+              <a href="https://github.com/3112ik09/video_surveillance" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-						<section class="split contact">
-							<h2>Work Experiences</h2>
+        <!-- Covid19-Live -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/Capp.png" alt="Covid19-Live" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Jan 2021</p>
+            <h3 class="card-title">Covid19-Live</h3>
+            <p class="card-desc">Flutter mobile app that scrapes and displays live Covid-19 statistics including cases and deaths by region.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Flutter</span>
+                <span class="tech">Dart</span>
+                <span class="tech">Web Scraping</span>
+              </div>
+              <a href="https://github.com/3112ik09/covid_app" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-							<h3>iNeuron</h3>
-							<p><strong>June 2021 - August 2021</strong></p>
-							<p><em>Deep Learning Engineer (Intern)</em></p>
-							<p><em>Remote, India</em></p>
-							<ul>
-							  <li>Developed a deep learning model for a mobile application for locating potholes from image and video data.</li>
-							  <li>Labeling scraped 3000+ images, took pictures and videos of streets, stored the GPS coordinates, and displayed them on Google Maps.</li>
-							</ul>
-						  
-							<h3>LTIMindtree</h3>
-							<p><strong>Feb 2023 - April 2023</strong></p>
-							<p><em>Graduate Engineer Trainee</em></p>
-							<p><em>Remote, India</em></p>
-							<ul>
-							  <li>Completed comprehensive training in various technologies, including Java, C#, HTML, and Angular.</li>
-							  <li>Demonstrated outstanding performance by achieving a remarkable 90% score in the assessments.</li>
-							</ul>
+        <!-- Auto Sub -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/ikt1.gif" alt="Auto Sub" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Dec 2020</p>
+            <h3 class="card-title">Auto Sub</h3>
+            <p class="card-desc">Google Translate-inspired app with speech-to-text support across multiple languages.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">Speech-to-Text</span>
+                <span class="tech">NLP</span>
+              </div>
+              <a href="https://github.com/3112ik09/AutoSub" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>81 Bell Road Clement Town Dehradun Uttrakhand , India</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+91-95557401668</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">ishantkukreti2000@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/ishant-kukreti-8296aa1b1/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/3112ik09" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        <!-- Emotion Bot -->
+        <div class="card">
+          <div class="card-media">
+            <img src="images/testbot.png" alt="Emotion Bot" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <p class="card-date">Oct 2020</p>
+            <h3 class="card-title">Emotion Bot</h3>
+            <p class="card-desc">Telegram bot that detects 4 facial emotions from user-submitted images using a deep learning model.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">Python</span>
+                <span class="tech">Deep Learning</span>
+                <span class="tech">Telegram API</span>
+              </div>
+              <a href="https://github.com/3112ik09/Emotion_detector_bot" class="btn btn-outline" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-					
-					<div id="copyright">
-						<h4>ishant kukreti</h4>
-					</div>
+      </div>
+    </div>
+  </section>
 
-			</div>
+  <!-- Contact -->
+  <footer id="contact">
+    <div class="container">
+      <h2 class="contact-heading">Let's Connect</h2>
+      <p class="contact-sub">Open to new opportunities, collaborations, and interesting conversations.</p>
+      <div class="contact-items">
+        <a href="mailto:ishantkukreti2000@gmail.com" class="contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          ishantkukreti2000@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/ishant-kukreti-8296aa1b1/" class="contact-item" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/3112ik09" class="contact-item" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <p class="footer-bottom">© 2026 Ishant Kukreti</p>
+    </div>
+  </footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
