@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -14,9 +14,9 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo">Ishant Kukreti</a>
       <nav class="nav">
         <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Contact</a>
         <a href="https://drive.google.com/file/d/1BA9uwlRAfXdbJEwp5guVPoxgfFNhsTGr/view" class="btn btn-primary" target="_blank" rel="noopener">Resume ↗</a>
@@ -26,37 +26,137 @@
 
   <!-- About / Hero -->
   <section id="about">
+
+    <!-- Static decorative floats -->
+    <div class="hero-deco" aria-hidden="true">
+      <svg class="deco-sparkle deco-s1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 0l1.8 6.5L18.5 10l-6.7 3.5L10 20l-1.8-6.5L1.5 10l6.7-3.5z" fill="#ccc" opacity=".7"/></svg>
+      <svg class="deco-sparkle deco-s2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0l1.4 5.2L15 8l-5.6 2.8L8 16l-1.4-5.2L1 8l5.6-2.8z" fill="#ccc" opacity=".6"/></svg>
+      <svg class="deco-sparkle deco-s3" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6 0l1 3.9 3.9 2.1-3.9 2.1L6 12l-1-3.9L1 6l3.9-2.1z" fill="#ccc" opacity=".55"/></svg>
+      <svg class="deco-sparkle deco-s4" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.2 4.5 4.8 2.5-4.8 2.5L7 14l-1.2-4.5L1 7l4.8-2.5z" fill="#ccc" opacity=".45"/></svg>
+      <div class="deco-icon deco-laptop">💻</div>
+      <div class="deco-icon deco-coffee">☕</div>
+    </div>
+
     <div class="container">
-      <span class="hero-eyebrow">ML Engineer · Computer Vision</span>
-      <h1 class="hero-name">Vision, AI &amp;<br>Building Stuff</h1>
-      <p class="hero-bio">I like to work with new tech and AI projects, and build stuff.</p>
-      <div class="skill-tags">
-        <span class="skill-tag">Computer Vision</span>
-        <span class="skill-tag">Machine Learning</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">LLMs</span>
-        <span class="skill-tag">AI Art</span>
-        <span class="skill-tag">GenAI</span>
+      <div class="hero-wrap">
+
+        <div class="hero-photo">
+          <img src="images/avatar.png" alt="Ishant Kukreti" class="hero-avatar" loading="eager" />
+        </div>
+
+        <!-- Text block -->
+        <div class="hero-content">
+          <p class="hero-greeting">✦ Hey there, welcome!</p>
+          <h1 class="hero-name">
+            <span class="name-prefix">I'm </span><span class="name-accent">Ishant</span>
+          </h1>
+          <p class="hero-bio">
+            A <span class="hl-amber">Data Scientist</span> who specialises in
+            <span class="hl-purple">Computer Vision</span> and builds production-grade
+            <span class="hl-teal">GenAI</span> systems that actually ship.
+            I love turning messy real-world data into things people find useful.
+          </p>
+          <div class="hero-badges">
+            <div class="hero-badge">
+              <svg class="badge-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="2" width="14" height="11" rx="2"/><path d="M5 15h6M8 13v2"/></svg>
+              @ InspektLabs · Remote
+            </div>
+            <div class="hero-badge">
+              <svg class="badge-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="8,1 10.2,5.5 15,6.3 11.5,9.8 12.4,14.5 8,12.2 3.6,14.5 4.5,9.8 1,6.3 5.8,5.5"/></svg>
+              2+ Years Experience
+            </div>
+          </div>
+          <p class="hero-building">
+            Currently building:
+            <a href="https://github.com/3112ik09/Soul-Ai" class="build-link build-teal" target="_blank" rel="noopener">Soul AI</a>
+            — a personalized AI companion connected with MCPs and agents.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-hero-primary">View Projects →</a>
+            <a href="#contact" class="btn btn-hero-outline">Let's chat</a>
+          </div>
+        </div>
+
+        <!-- Achievement cards -->
+        <div class="hero-aside">
+          <div class="hero-achievement ha-inspekt">
+            <div class="ach-icon">💼</div>
+            <div>
+              <p class="ach-title">InspektLabs</p>
+              <p class="ach-sub">CV Engineer · Remote</p>
+            </div>
+          </div>
+          <div class="hero-achievement ha-edu">
+            <div class="ach-icon">🎓</div>
+            <div>
+              <p class="ach-title">SGPA 8.5</p>
+              <p class="ach-sub">Graphic Era · B.Tech CS</p>
+            </div>
+          </div>
+          <div class="hero-achievement ha-loc">
+            <div class="ach-icon">📍</div>
+            <div>
+              <p class="ach-title">Dehradun, India</p>
+              <p class="ach-sub">Available Remotely</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
-      </div>
-      <div class="social-bar">
-        <a href="https://www.linkedin.com/in/ishant-kukreti-8296aa1b1/" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-          LinkedIn
-        </a>
-        <a href="https://github.com/3112ik09" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-          </svg>
-          GitHub
-        </a>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">Career</p>
+      <h2 class="section-title">Experience &amp; Education</h2>
+      <div class="exp-list">
+
+        <!-- InspektLabs -->
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Data Scientist — Computer Vision</h3>
+                <p class="exp-company">InspektLabs · Remote, India</p>
+              </div>
+              <span class="exp-date">Oct 2023 – Present</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Trained lightweight classifiers (blur, brightness, moiré, vehicle-type) integrated into a multi-model quality estimation pipeline, <strong>reducing false positives by 95%</strong> in production.</li>
+              <li>Designed and annotated a custom vehicle skeleton keypoint dataset; trained <strong>YOLOv8-Pose</strong> and <strong>MMPose</strong> models for feature-matching alignment, damage warping, and spatial distance estimation.</li>
+              <li>Designed a semi-supervised <strong>DINOv2</strong> segmentation pipeline achieving <strong>+2% F1</strong> improvement.</li>
+              <li>Deployed full model suite on <strong>AWS ECS, ECR, and Lambda</strong> using Docker for scalable production inference.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tech">PyTorch</span>
+              <span class="tech">YOLOv8</span>
+              <span class="tech">DINOv2</span>
+              <span class="tech">MMPose</span>
+              <span class="tech">AWS</span>
+              <span class="tech">Docker</span>
+              <span class="tech">OpenCV</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="exp-item edu-item">
+          <div class="exp-dot"></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">B.Tech — Computer Science (ML Specialization)</h3>
+                <p class="exp-company">Graphic Era Hill University · Dehradun, India</p>
+              </div>
+              <span class="exp-date exp-date-edu">Jun 2019 – Jun 2023</span>
+            </div>
+            <p class="exp-edu-note">SGPA 8.5 / 10</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -66,14 +166,14 @@
     <div class="container">
       <p class="section-label">Work</p>
       <h2 class="section-title">Projects</h2>
-      <p class="section-sub">14 projects spanning AI, ML, computer vision, and mobile apps</p>
+      <p class="section-sub">15 projects spanning AI, ML, computer vision, and mobile apps</p>
 
       <div class="projects-grid">
 
         <!-- IPL Stats Dashboard -->
         <div class="card">
           <div class="card-media">
-            <img src="images/ipl_dashboard.png" alt="IPL Stats Dashboard" loading="lazy" />
+            <img src="images/IPL_project.gif" alt="IPL Stats Dashboard" loading="lazy" />
           </div>
           <div class="card-body">
             <p class="card-date">2026</p>
@@ -94,7 +194,9 @@
         <!-- Urban Forest Intelligence -->
         <div class="card">
           <div class="card-media">
-            <div class="card-banner b-green">🌳</div>
+            <video muted loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;">
+              <source src="images/Urban-forest-comp.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="card-body">
             <p class="card-date">May 2026</p>
@@ -116,7 +218,9 @@
         <!-- Soul-Ai -->
         <div class="card">
           <div class="card-media">
-            <div class="card-banner b-indigo">🎙️</div>
+            <video muted loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;">
+              <source src="images/Soul-AI video.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="card-body">
             <p class="card-date">2024</p>
@@ -158,7 +262,7 @@
         <!-- ImageInHand -->
         <div class="card">
           <div class="card-media">
-            <img src="images/segA.jpeg" alt="ImageInHand" loading="lazy" />
+            <img src="images/Imageinhand.gif" alt="ImageInHand" loading="lazy" />
           </div>
           <div class="card-body">
             <p class="card-date">Sep 2023</p>
@@ -409,6 +513,187 @@
       <p class="footer-bottom">© 2026 Ishant Kukreti</p>
     </div>
   </footer>
+
+  <!-- Lofi Player -->
+  <div class="lofi-widget">
+    <div class="lofi-popup" id="lofi-popup">
+      <div class="lofi-popup-header">
+        <span>🎵 Lofi Beats</span>
+        <button class="lofi-close" id="lofi-close" aria-label="Close player">✕</button>
+      </div>
+      <iframe id="lofi-frame" width="280" height="157" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <button class="lofi-btn" id="lofi-btn" aria-label="Toggle lofi music" title="Lofi Beats">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <path d="M9 18V5l12-2v13M9 18c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-2c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-body">
+        <p class="card-date" id="modal-date"></p>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <div class="modal-stats" id="modal-stats"></div>
+        <p class="modal-section-label">About This Project</p>
+        <p class="modal-desc" id="modal-desc"></p>
+        <p class="modal-section-label">Tech Stack</p>
+        <div class="tech-list" id="modal-tech"></div>
+        <div class="modal-actions" id="modal-actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // ── Helpers ──
+      function timeAgo(dateStr) {
+        var diff = (Date.now() - new Date(dateStr)) / 1000;
+        if (diff < 3600)    return Math.floor(diff / 60) + 'm ago';
+        if (diff < 86400)   return Math.floor(diff / 3600) + 'h ago';
+        if (diff < 2592000) return Math.floor(diff / 86400) + 'd ago';
+        if (diff < 31536000) return Math.floor(diff / 2592000) + 'mo ago';
+        return Math.floor(diff / 31536000) + 'y ago';
+      }
+
+      // ── Modal ──
+      var overlay  = document.getElementById('project-modal');
+      var closeBtn = document.getElementById('modal-close');
+
+      function openModal(card) {
+        var media  = card.querySelector('.card-media');
+        var title  = card.querySelector('.card-title').textContent;
+        var date   = card.querySelector('.card-date').textContent;
+        var desc   = card.querySelector('.card-desc').textContent;
+        var techs  = card.querySelectorAll('.tech');
+        var link   = card.querySelector('.btn.btn-outline');
+
+        document.getElementById('modal-media').innerHTML = media.innerHTML;
+        var modalVid = document.querySelector('#modal-media video');
+        if (modalVid) { modalVid.muted = true; modalVid.play(); }
+        document.getElementById('modal-title').textContent = title;
+        document.getElementById('modal-date').textContent = date;
+        document.getElementById('modal-desc').textContent = desc;
+
+        var techContainer = document.getElementById('modal-tech');
+        techContainer.innerHTML = '';
+        techs.forEach(function (t) {
+          var span = document.createElement('span');
+          span.className = 'tech';
+          span.textContent = t.textContent;
+          techContainer.appendChild(span);
+        });
+
+        var actions = document.getElementById('modal-actions');
+        actions.innerHTML = '';
+        if (link) {
+          var a = document.createElement('a');
+          a.href = link.href;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.className = 'btn btn-primary';
+          a.textContent = link.textContent.trim();
+          actions.appendChild(a);
+        }
+
+        // GitHub stats fetch
+        var statsEl = document.getElementById('modal-stats');
+        statsEl.innerHTML = '<span class="modal-stat modal-stat-loading">fetching stats…</span>';
+
+        if (link && link.href.includes('github.com/')) {
+          var m = link.href.match(/github\.com\/([^/]+)\/([^/?#]+)/);
+          if (m) {
+            fetch('https://api.github.com/repos/' + m[1] + '/' + m[2])
+              .then(function (r) { return r.json(); })
+              .then(function (d) {
+                if (d.id) {
+                  var html = '<span class="modal-stat">⭐ ' + d.stargazers_count + ' stars</span>';
+                  if (d.forks_count)  html += '<span class="modal-stat">🍴 ' + d.forks_count + ' forks</span>';
+                  if (d.language)     html += '<span class="modal-stat">💻 ' + d.language + '</span>';
+                  if (d.pushed_at)    html += '<span class="modal-stat">🕐 ' + timeAgo(d.pushed_at) + '</span>';
+                  statsEl.innerHTML = html;
+                } else {
+                  statsEl.innerHTML = '';
+                }
+              })
+              .catch(function () { statsEl.innerHTML = ''; });
+          } else {
+            statsEl.innerHTML = '';
+          }
+        } else {
+          statsEl.innerHTML = '';
+        }
+
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.card').forEach(function (card) {
+        card.addEventListener('click', function (e) {
+          if (e.target.closest('.btn')) return;
+          openModal(card);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) closeModal();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      // ── Lazy-play card videos ──
+      var cardVideos = document.querySelectorAll('.card-media video');
+      if ('IntersectionObserver' in window && cardVideos.length) {
+        var vidObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(e) {
+            if (e.isIntersecting) { e.target.play(); vidObs.unobserve(e.target); }
+          });
+        }, { rootMargin: '100px' });
+        cardVideos.forEach(function(v) { vidObs.observe(v); });
+      }
+
+      // ── Lofi Player ──
+      var lofiBtn   = document.getElementById('lofi-btn');
+      var lofiPopup = document.getElementById('lofi-popup');
+      var lofiFrame = document.getElementById('lofi-frame');
+      var lofiClose = document.getElementById('lofi-close');
+      var lofiOpen  = false;
+      var LOFI_SRC  = 'https://www.youtube-nocookie.com/embed/jfKfPfyJRdk?autoplay=1&controls=1';
+
+      lofiBtn.addEventListener('click', function () {
+        if (!lofiOpen) {
+          lofiFrame.src = LOFI_SRC;
+          lofiPopup.classList.add('is-open');
+          lofiBtn.classList.add('is-playing');
+          lofiOpen = true;
+        } else {
+          lofiFrame.src = '';
+          lofiPopup.classList.remove('is-open');
+          lofiBtn.classList.remove('is-playing');
+          lofiOpen = false;
+        }
+      });
+
+      lofiClose.addEventListener('click', function (e) {
+        e.stopPropagation();
+        lofiFrame.src = '';
+        lofiPopup.classList.remove('is-open');
+        lofiBtn.classList.remove('is-playing');
+        lofiOpen = false;
+      });
+    })();
+  </script>
 
 </body>
 </html>
