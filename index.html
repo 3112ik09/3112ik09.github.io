@@ -19,7 +19,7 @@
         <a href="#experience" class="nav-link">Experience</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <a href="https://drive.google.com/file/d/1BA9uwlRAfXdbJEwp5guVPoxgfFNhsTGr/view" class="btn btn-primary" target="_blank" rel="noopener">Resume ↗</a>
+        <a href="https://drive.google.com/file/d/11zGQhomWDWyfuORlVX_OJxOugSg8IQ3B/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">Resume ↗</a>
       </nav>
     </div>
   </header>
@@ -63,7 +63,7 @@
             </div>
             <div class="hero-badge">
               <svg class="badge-ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="8,1 10.2,5.5 15,6.3 11.5,9.8 12.4,14.5 8,12.2 3.6,14.5 4.5,9.8 1,6.3 5.8,5.5"/></svg>
-              2+ Years Experience
+              3+ Years Experience
             </div>
           </div>
           <p class="hero-building">
@@ -125,16 +125,23 @@
               <span class="exp-date">Oct 2023 – Present</span>
             </div>
             <ul class="exp-bullets">
-              <li>Trained lightweight classifiers (blur, brightness, moiré, vehicle-type) integrated into a multi-model quality estimation pipeline, <strong>reducing false positives by 95%</strong> in production.</li>
-              <li>Designed and annotated a custom vehicle skeleton keypoint dataset; trained <strong>YOLOv8-Pose</strong> and <strong>MMPose</strong> models for feature-matching alignment, damage warping, and spatial distance estimation.</li>
-              <li>Designed a semi-supervised <strong>DINOv2</strong> segmentation pipeline achieving <strong>+2% F1</strong> improvement.</li>
-              <li>Deployed full model suite on <strong>AWS ECS, ECR, and Lambda</strong> using Docker for scalable production inference.</li>
+              <li>Trained lightweight classifiers (blur, brightness, car type and other quality checks) into a multi-model image quality pipeline, <strong>cutting false positives by 95%</strong> and reducing manual review load on incoming images.</li>
+              <li>Designed a novel 2D vehicle keypoint schema from 3D mesh references and built a semi-automated, model-assisted labeling pipeline that sped up annotation; trained <strong>YOLOv8-Pose</strong> and <strong>RTMPose</strong> to <strong>NME 0.01</strong> across multi-angle views, now powering damage warping and spatial distance estimation in production.</li>
+              <li>Trained a multi-class VIN dashboard detector at <strong>F1 0.95</strong>, cutting average inference latency from <strong>3s to 1.5s</strong>.</li>
+              <li>Trained and deployed a <strong>UNet++</strong> model to production for automated wheel rim scratch detection (<strong>F1 0.86</strong>).</li>
+              <li>Designed a damage-size estimation algorithm that combines keypoints, local feature matching and car-part masks against a reference car of known dimensions to estimate real-world damage size.</li>
+              <li>Built a two-stage <strong>LoFTR</strong>-based warping pipeline that aligns zoomed-in damage crops to the full car image, correctly localizing close-up damage detections.</li>
+              <li>Built a semi-supervised <strong>DINOv2</strong> segmentation pipeline for vehicle damage, improving <strong>F1 by 2%</strong> over the prior approach.</li>
+              <li>Deployed the full model suite on <strong>AWS ECS, ECR and Lambda</strong> with Docker, and shipped quantized <strong>ONNX</strong> and <strong>TensorFlow.js</strong> models for real-time inference on web and edge devices.</li>
             </ul>
             <div class="exp-tags">
               <span class="tech">PyTorch</span>
-              <span class="tech">YOLOv8</span>
+              <span class="tech">YOLOv8-Pose</span>
+              <span class="tech">RTMPose</span>
+              <span class="tech">UNet++</span>
               <span class="tech">DINOv2</span>
-              <span class="tech">MMPose</span>
+              <span class="tech">LoFTR</span>
+              <span class="tech">ONNX</span>
               <span class="tech">AWS</span>
               <span class="tech">Docker</span>
               <span class="tech">OpenCV</span>
@@ -166,9 +173,32 @@
     <div class="container">
       <p class="section-label">Work</p>
       <h2 class="section-title">Projects</h2>
-      <p class="section-sub">15 projects spanning AI, ML, computer vision, and mobile apps</p>
+      <p class="section-sub">16 projects spanning AI, ML, computer vision, and mobile apps</p>
 
       <div class="projects-grid">
+
+        <!-- Person Fall Detection -->
+        <div class="card" data-youtube="c5BJxNGyR34">
+          <div class="card-media">
+            <img src="https://i.ytimg.com/vi/c5BJxNGyR34/maxresdefault.jpg" alt="Person Fall Detection demo" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/c5BJxNGyR34/hqdefault.jpg';" />
+            <span class="play-badge" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card-body">
+            <p class="card-date">Nov 2026</p>
+            <h3 class="card-title">Person Fall Detection</h3>
+            <p class="card-desc">Detects when a person falls in a video and tells real falls apart from walking, sitting, bending and crouching. YOLO pose skeletons feed a Transformer that scores fall motion, then three ground-contact signals confirm it &mdash; with a live Streamlit dashboard and per-run performance reports.</p>
+            <div class="card-footer">
+              <div class="tech-list">
+                <span class="tech">YOLO Pose</span>
+                <span class="tech">Transformer</span>
+                <span class="tech">PyTorch</span>
+                <span class="tech">Streamlit</span>
+                <span class="tech">OpenCV</span>
+              </div>
+              <a href="https://github.com/3112ik09/pose-fall-detector" class="btn btn-outline" target="_blank" rel="noopener">GitHub &#8599;</a>
+            </div>
+          </div>
+        </div>
 
         <!-- IPL Stats Dashboard -->
         <div class="card">
@@ -572,7 +602,15 @@
         var techs  = card.querySelectorAll('.tech');
         var link   = card.querySelector('.btn.btn-outline');
 
-        document.getElementById('modal-media').innerHTML = media.innerHTML;
+        var mediaEl = document.getElementById('modal-media');
+        var ytId = card.getAttribute('data-youtube');
+        if (ytId) {
+          mediaEl.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + ytId +
+            '?autoplay=1&rel=0&modestbranding=1" title="Project demo video" frameborder="0" ' +
+            'allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+        } else {
+          mediaEl.innerHTML = media.innerHTML;
+        }
         var modalVid = document.querySelector('#modal-media video');
         if (modalVid) { modalVid.muted = true; modalVid.play(); }
         document.getElementById('modal-title').textContent = title;
@@ -635,6 +673,8 @@
       function closeModal() {
         overlay.classList.remove('is-open');
         document.body.style.overflow = '';
+        var mm = document.getElementById('modal-media');
+        if (mm && mm.querySelector('iframe')) mm.innerHTML = '';
       }
 
       document.querySelectorAll('.card').forEach(function (card) {
